@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gemini-bigquery-analysis"
+version = "0.1.0"
+description = ""
+authors = ["ryutah <6662577+ryutah@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas-gbq = "^0.23.1"
+google-cloud-bigquery = {extras = ["bqstorage", "pandas"], version = "^3.25.0"}
+google-cloud-aiplatform = "^1.59.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
